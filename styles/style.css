@@ -1,0 +1,255 @@
+/*-------------------
+    google fonts
+--------------------*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+
+
+
+/*---------------------------------
+    common styles or utilities
+----------------------------------*/
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    width: 1444px;
+    margin: 0 auto;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+section{
+    width: 1143px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.common-button{
+    padding: 10px 24px;
+    background-color: #E02C6D;
+    color: #FFFFFF;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 20px;
+    transition: all 0.5s;
+}
+.common-button i{
+    margin-left: 10px;
+}
+.common-button:hover{
+    background-color: #FFFFFF;
+    color: #000000;
+    border: 1px solid #000000;
+}
+
+
+
+/*------------------------------
+    header section start
+------------------------------*/
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #2D25A0;
+    height: 677px;
+}
+header section {
+    width: 1143px;
+    height: 456px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header-title{
+    width: 485px;
+    height: 301px;
+}
+.header-title h1{
+    font-size: 64px;
+    color: #FFFFFF;
+    font-weight: 700;
+    line-height: 80px;
+}
+.header-banner{
+    width: 556px;
+    height: 438px;
+}
+.header-banner img{
+    width: 100%;
+    transition: all 1s;
+}
+.header-banner img:hover{
+    transform: scale(1.2);
+}
+
+/*------------------------
+    header section end
+-------------------------*/
+
+
+
+/*---------------------------
+    main section start
+----------------------------*/
+
+
+/* player gallery start  */
+
+.player-gallery{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.players{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 30px;
+    grid-row-gap: 27px;
+    justify-content: center;
+    margin-top: 70px;
+}
+.player{
+    width: 300px;
+    height: 447px;
+    padding: 15px;
+    box-shadow: 1px 1px 5px lightgray;
+    border-radius: 5px;
+    
+}
+.player img{
+    width: 100%;
+}
+.player h3{
+    margin: 10px 0;
+}
+
+
+
+
+/* highlights sectiion  */
+.highlights{
+    width: 1050px;
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+    margin: 60px 0;
+}
+.highlights-info{
+    width: 469px;
+    height: 309px;
+}
+.highlights-info h1{
+    font-size: 48px;
+    line-height: 60px;
+    font-weight: 700;
+}
+.highlights-info p{
+    font-size: 16px;
+    line-height: 28px;
+    margin-right: 60px;
+    margin-top: 20px;
+}
+.highlights-photo{
+    width: 567px;
+    height: 427px;
+}
+.highlights-photo img{
+    width: 100%;
+}
+
+
+/* footer section  */
+
+footer{
+    height: 213px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+footer img{
+    width: 483px;
+}
+.footer-icon{
+    color: #969BAB;
+    margin-bottom: 20px;
+}
+.footer-icon i{
+    background-color: #E7E7E8;
+    padding: 7px;
+    margin: 0 5px;
+    border-radius: 100%;
+}
+
+/* media query section  */
+
+/* for mobile screen  */
+@media only screen and (max-width: 688px) {
+    body{
+        width: auto;
+        margin: 0 auto;
+    }
+    section{
+        width: auto;
+    }
+    /* header section  */
+    header section{
+        width: auto;
+        height: 695px;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .header-title{
+        width: 278px;
+        height: 301px;
+    }
+    .header-title h1{
+        font-size: 36px;
+        color: #FFFFFF;
+        font-weight: 700;
+        line-height: 50px;
+    }
+    .header-banner{
+        width: 329px;
+        height: 259px;
+    }
+    /* players gallary section  */
+
+    .players{
+        grid-template-columns: 1fr;
+    }
+    /* highlights section  */
+    .highlights{
+        width: auto;
+        flex-direction: column;
+    }
+    .highlights-info{
+        width: 329px;
+        height: 299px;
+    }
+    .highlights-info h1{
+        font-size: 30px;
+        line-height: 40px;
+    }
+    .highlights-info p{
+        margin-right: 0;
+    }
+    .highlights-photo {
+        width: 328px;
+        height: 248px;
+        margin-top: 30px;
+    }
+    /* footer section  */
+    footer{
+        width: auto;
+    }
+    footer img{
+        width: 271px;
+    }
+}
