@@ -35,13 +35,32 @@ section{
     color: #FFFFFF;
     text-decoration: none;
     display: inline-block;
-    margin-top: 20px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    border: 1px solid #E02C6D;
     transition: all 0.5s;
 }
 .common-button i{
     margin-left: 10px;
 }
 .common-button:hover{
+    background-color: #FFFFFF;
+    color: #000000;
+    border: 1px solid #000000;
+}
+.common-button-2{
+    padding: 10px 24px;
+    background-color: #E02C6D;
+    border: 1px solid #E02C6D;
+    color: #FFFFFF;
+    text-decoration: none;
+    display: inline-block;
+    transition: all 0.5s;
+}
+.common-button-2 i{
+    margin-right: 10px;
+}
+.common-button-2:hover{
     background-color: #FFFFFF;
     color: #000000;
     border: 1px solid #000000;
@@ -54,6 +73,7 @@ section{
 ------------------------------*/
 header{
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     background-color: #2D25A0;
@@ -65,6 +85,18 @@ header section {
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+nav{
+    width: 1143px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 50px;
+}
+nav .menu-item a{
+    text-decoration: none;
+    color: #FFFFFF;
+    margin-right: 20px;
 }
 .header-title{
     width: 485px;
@@ -119,8 +151,6 @@ header section {
     height: 463px;
     padding: 15px;
     box-shadow: 1px 1px 5px lightgray;
-    border-radius: 5px;
-    
 }
 .player img{
     width: 100%;
@@ -170,9 +200,11 @@ header section {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    margin-bottom: 50px;
 }
-.photo-gallery h2{
-    text-align: left;
+.photo-gallery h1{
+    margin-bottom: 20px;
+    font-size: 30px;
 }
 .photos{
     display: grid;
@@ -183,6 +215,33 @@ header section {
     width: 344px;
 }
 .photo img{
+    width: 100%;
+}
+
+
+
+/* teams section start  */
+.teams-section{
+    width: 1050px;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 50px;
+    box-shadow: 1px 1px 5px lightgray;
+}
+.teams-section h1{
+    margin-bottom: 20px;
+    font-size: 30px;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+.teams{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+.team{
+    width: 100%;
+}
+.team img{
     width: 100%;
 }
 
@@ -265,7 +324,7 @@ footer img{
     .highlights-photo {
         width: 328px;
         height: 248px;
-        margin-top: 30px;
+        margin-top: 75px;
     }
 
     /* photo gallery section */
@@ -337,7 +396,6 @@ footer img{
     .highlights-photo {
         width: 320px;
         height: 248px;
-        margin-top: 30px;
     }
     .photo-gallery{
         width: auto;
