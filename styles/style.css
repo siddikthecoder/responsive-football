@@ -14,7 +14,7 @@
 }
 body{
     font-family: 'Poppins', sans-serif;
-    width: 1444px;
+    height: auto;
     margin: 0 auto;
 }
 main{
@@ -116,7 +116,7 @@ header section {
 }
 .player{
     width: 300px;
-    height: 447px;
+    height: 463px;
     padding: 15px;
     box-shadow: 1px 1px 5px lightgray;
     border-radius: 5px;
@@ -294,6 +294,8 @@ footer img{
     section{
         width: auto;
     }
+
+    /* header section  */
     header section{
         width: auto;
         height: 450px;
@@ -313,6 +315,8 @@ footer img{
         width: 329px;
         height: 259px;
     }
+
+    /* players section  */
     .players{
         grid-template-columns: repeat(2, 1fr);
     }
@@ -340,6 +344,9 @@ footer img{
     }
     .photos{
         grid-template-columns: repeat(2, 1fr);
+    }
+    .photo:last-child{
+        display: none;
     }
     footer{
         width: auto;
