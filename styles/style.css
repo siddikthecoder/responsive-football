@@ -253,3 +253,62 @@ footer img{
         width: 271px;
     }
 }
+
+/* for tablet screen  */
+
+@media only screen and (min-width: 689px) and (max-width: 992px) {
+    body{
+        width: auto;
+        margin: 0 auto;
+    }
+    section{
+        width: auto;
+    }
+    header section{
+        width: auto;
+        height: 450px;
+        justify-content: center;
+    }
+    .header-title{
+        width: 278px;
+        height: 301px;
+    }
+    .header-title h1{
+        font-size: 36px;
+        color: #FFFFFF;
+        font-weight: 700;
+        line-height: 50px;
+    }
+    .header-banner{
+        width: 329px;
+        height: 259px;
+    }
+    .players{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .highlights{
+        width: auto;
+    }
+    .highlights-info{
+        width: 300px;
+        height: 299px;
+    }
+    .highlights-info h1{
+        font-size: 25px;
+        line-height: 40px;
+    }
+    .highlights-info p{
+        margin-right: 30px;
+    }
+    .highlights-photo {
+        width: 320px;
+        height: 248px;
+        margin-top: 30px;
+    }
+    footer{
+        width: auto;
+    }
+    footer img{
+        width: 300px;
+    }
+}
